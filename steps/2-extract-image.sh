@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Extracting and ignoring errors...
+unxz -vqq ./*.xz || true

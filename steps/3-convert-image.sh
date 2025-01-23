@@ -26,9 +26,7 @@ fi
 
 if [[ -z "$(command -v guestfish)" ]]; then
     echo "Could not find 'guestfish' command"
-    #exit 1
-    sudo apt update
-    sudo apt install -y guestfish
+    exit 1
 fi
 
 cp --reflink=auto "${source}" "${dest}"
